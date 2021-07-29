@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="corona.css">
+</head>
+<body>
+    <div class="conatiner">
+       <nav>
+           <h1>Corona Live Tracker</h1>
+       </nav>
+    </div>
+    <div class="updated">
+        <h3 class="updatedh3">Last updated : </h3>
+    </div>
+    <div class="nav2">
+        <div>
+            <h2>Search By country</h2>
+            <input type="text" placeholder="India" class="inputCountry" >
+        </div>
+        <div>
+            <h2>Search By Date</h2>
+            <input type="text" placeholder="yy-mm-dd(Date is Optional)" class="inputDate"  maxlength="10" >
+        </div>
+    </div>
+    <div class="search"><button id="btn">Search</button></div>
+    <div class="main">
+        <div class="main-child">
+            <div class="Confirmed shadow">
+                <h3 id="case">Confirmed</h3>
+                <div class="confirmedSpan counter">0</div>
+            </div>
+            <div class="Deaths shadow">
+                 <h3 id="case">Deaths</h3>
+                 <div class="deathsSpan counter" >0</div>
+                </div>
+           
+            <div class="Recovered shadow">
+                <h3 id="case">Recovered</h3>
+                <div class="recoveredSpan counter">0</div>
+            </div>
+           
+            <div class="Active shadow"> 
+                <h3 id="case">Active</h3>
+                <div class="activeSpan counter">0</div>
+                </div>
+        </div>
+    </div>
+    <script src="corona.js"></script>
+</body>
+</html>
